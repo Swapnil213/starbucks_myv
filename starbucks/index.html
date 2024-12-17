@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>StarBucks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#">
+                <img class="logo" src="images/starbucks.png">
+            </a>
+            <ul>
+                <li>
+                    <a href="#">Menu</a>
+                </li>
+                <li>
+                    <a href="#">Rewards</a>
+                </li>
+                <li>
+                    <a href="#">Gift Cards</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="text">
+                <h2><span>Brewing Moments</span>
+                    <br>One Cup at a Time
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, quis assumenda? In nisi suscipit
+                    magni blanditiis, beatae, aspernatur consequuntur doloribus aliquid cumque magnam, dicta laboriosam
+                    ratione rerum quas molestiae? Obcaecati?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa exercitationem laboriosam similique
+                    omnis. Atque nulla mollitia doloribus iure ex aliquid commodi, sequi delectus doloremque, dolore
+                    laboriosam nemo accusantium iste temporibus?
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="image">
+                <img src="images/1.png" class="coffee">
+            </div>
+        </div>
+        <ul class="thumbnail">
+            <li><img src="images/1t.png" onclick="imageChange('images/1.png'); colorChange('#037246');"></li>
+            <li><img src="images/2t.png" onclick="imageChange('images/2.png'); colorChange('#eb7495');"></li>
+        </ul>
+        <ul class="social">
+            <li><img src="images/facebook.png"></li>
+            <li><img src="images/twitter.png"></li>
+            <li><img src="images/instagram.png"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imageChange(anything) {
+            let source = document.querySelector('.coffee');
+            source.src = anything;
+        }
+        function colorChange(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
